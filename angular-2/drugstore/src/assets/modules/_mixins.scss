@@ -6,3 +6,6 @@
     @content
   }
 };
+@mixin bg-color ($coloring) {
+  background-color: $coloring;
+}

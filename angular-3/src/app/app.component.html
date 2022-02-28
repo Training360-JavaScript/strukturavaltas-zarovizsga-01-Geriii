@@ -1,1 +1,42 @@
-<p>app works!</p>
+<div class="container">
+  <div class="row">
+    <div class="col-12 mt-5">
+      <table class="table">
+        <thead>
+          <tr>
+          <th>#</th>
+          <th>material</th>
+          <th>trade</th>
+          <th>cost code</th>
+          <th>price</th>
+          <th>active</th>
+        </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let row of list$ | async">
+            <td>{{ row.id }}</td>
+            <td>{{ row.material }}</td>
+            <td>{{ row.trade }}</td>
+            <td>{{ row.cost_code }}</td>
+            <td>{{ row.price }}</td>
+            <td>{{ row.active }}</td>
+            <td>
+              <div class="btn-group">
+                <button class="btn btn-info">
+                  <i class="fa fa-pencil"></i>
+                </button>
+              </div>
+            </td>
+            <td>
+              <div class="btn-group">
+                <button class="btn btn-danger">
+                  <i class="fa fa-trash"></i>
+                </button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
