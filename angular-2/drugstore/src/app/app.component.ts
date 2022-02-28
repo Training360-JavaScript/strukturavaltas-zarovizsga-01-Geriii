@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Drug } from './model/drug';
+import { DrugService } from './service/drug.service'
 
 @Component({
   selector: 'app-root',
